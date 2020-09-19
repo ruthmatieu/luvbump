@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.error {
+  color: crimson;
+  font-size: 0.6rem;
+  margin: 0;
+}
+
+.password-icon-signup {
+  color: #949494;
+  cursor: pointer;
+  position: relative;
+  top: -25px;
+  left: 165px;
+  
+}
+
+.password-icon-login {
+  color: #949494;
+  cursor: pointer;
+  position: relative;
+  top: -25px;
+  left: 165px;
+}
+
+body {
+  background-color: #F7F8F9;
+}
+
+.app-bar {
+  background-color: #2B6CB0;
+  margin: 0;
+  padding: 2% 0;
+  color: #4FD1C5;
+  border-radius: 25px 0 0 0;
+}
+
+.signup-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 25px;
+  margin: 80px 0;
+  
+}
+form {
+  margin: 0 70px;
+}
+.form-info {
+  background-color: white;
+  width: 500px;
+  border-radius: 25px 0 0 25px;
+  box-shadow: 2px 3px 5px #888888;
+  height: 75vh;
+}
+
+.form-graphics {
+  background-color: #ECF8FF;
+  background-image: url('./images/landing-hero.png');
+  background-repeat: repeat;
+  background-size: cover;
+  width: 450px;
+  border-radius: 0 25px 25px 0;
+  box-shadow: 2px 3px 5px #888888;
+  /* height: 500px; include a height for responsiveness*/
+}
+
+.form-graphics p {
+  position: relative;
+  top: 350px;
+  color: #2B6CB0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-align: left;
+  margin: 0 60px;
+  line-height: 2.5rem;
+}
+
+.form-graphics p span {
+  color: #4FD1C5;
+}
+.label {
+  align-items: left;
+}
+button {
+  padding: 9px 15px;
+  border-radius: 5px;
+  border: 1px solid #2B6BB0;
+  color: white;
+  background-color: #2B6BB0;
+  box-shadow: 2px 3px 5px #888888;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled]{
+  padding: 9px 15px;
+  border-radius: 5px;
+  border: 1px solid #E0E0E0;
+  color: #A6A6A6;
+  background-color: #E0E0E0;
+  box-shadow: none;
+  font-weight: 700;
+  cursor: auto;
+}
+
+.signup-btn {
+  position: relative;
+  top: 30px;
+}
+
+.login-btn {
+  position: relative;
+  top: 100px;
+}
+
+.legal {
+  margin: 20px 0 0 0;
+}
+
+.member-login {
+  position: relative;
+  top: 20px;
+}
+
+.member-login-login {
+  position: relative;
+  top: 20px;
+  margin-bottom: 50px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 949px) {
+
+  .app-bar {
+    border-radius: 25px 25px 0 0;
+  }
+  
+  .form-info {
+    border-radius: 25px 25px 0 0;
+    box-shadow: 2px 3px 5px #888888;
+    height: 65vh;
+  }
+  
+  .form-graphics {
+    background-color: #ECF8FF;
+    background-image: url('./images/landing-hero.png');
+    background-repeat: no-repeat;
+    background-size: 55%;
+    width: 500px;
+    border-radius: 0 0 25px 25px;
+    height: 30vh;
+  }
+
+  .form-graphics p {
+    top: 55px;
+    left: 120px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 0 60px;
+    line-height: 2rem;
+    text-align: center;
+  }
+}
